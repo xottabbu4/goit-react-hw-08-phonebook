@@ -17,7 +17,7 @@ export default function Contacts() {
 
   return (
     <>
-      <MainTitle title="Phonebook" />
+      <title>Phonebook</title>
       <ContactForm />
       <Filter />
       <div>{isLoading && 'Request in progress...'}</div>

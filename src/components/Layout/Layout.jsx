@@ -5,11 +5,11 @@ import { Outlet } from 'react-router-dom';
 
 export const Layout = () => {
   return (
-    <Box>
+    <div>
       <AppBar />
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
-    </Box>
+    </div>
   );
 };
