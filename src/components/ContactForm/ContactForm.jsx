@@ -1,21 +1,21 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addContact } from 'redux/operations';
-import { selectContacts } from 'redux/selectors';
+import { addContact } from 'redux/contacts/operations';
+import { selectContacts } from 'redux/contacts/selectors';
 import css from './ContactForm.module.css';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const inputChange = event => {
     if (event.target.name === 'name') {
       setName(event.target.value);
     }
-    if (event.target.name === 'phone') {
-      setPhone(event.target.value);
+    if (event.target.name === 'number') {
+      setNumber(event.target.value);
     }
     }
 
@@ -23,7 +23,7 @@ export const ContactForm = () => {
       event.preventDefault();
       const contact = {
       name,
-      phone
+      number
     };
     const isAtList = contacts.find(contact => contact.name === name);
     if (isAtList) {
@@ -42,7 +42,7 @@ export const ContactForm = () => {
             <input
               className={css.formInput}
               type="text"
-              name="name"
+              name="number"
               pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
               title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
               required
