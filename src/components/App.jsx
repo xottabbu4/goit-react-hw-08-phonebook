@@ -12,7 +12,7 @@ import css from './App.module.css';
 const HomePage = lazy(() => import('../pages/Home/Home'));
 const RegisterPage = lazy(() => import('../pages/Register/Register'));
 const LoginPage = lazy(() => import('../pages/Login/Login'));
-const ContactsPage = lazy(() => import('../pages/Contacts/Contacts/Contacts'));
+const ContactsPage = lazy(() => import('../pages/Contacts/Contacts'));
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -25,7 +25,6 @@ export const App = () => {
   return isRefreshing ? (
     <b>Refreshing user...</b>
   ) : (
-    <>
       <section className={css.phonebook}>
         <div className={css.container}>
           <Routes>
@@ -63,6 +62,5 @@ export const App = () => {
           </Routes>
         </div>
       </section>
-    </>
   );
 };

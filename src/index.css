@@ -27,6 +27,10 @@ ul {
   padding: 0;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
 ul {
   list-style: none;
 }

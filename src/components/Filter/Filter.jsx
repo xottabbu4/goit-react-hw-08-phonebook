@@ -7,7 +7,7 @@ export const Filter = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
   if (contacts === undefined) return;
-  console.log(contacts);
+  // console.log(contacts);
   
   return (
     <div className={css.filterSection}>
