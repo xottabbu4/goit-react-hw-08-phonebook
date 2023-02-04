@@ -5,6 +5,7 @@ const styles = {
       justifyContent: 'center',
     },
     title: {
+      marginTop: 60,
       fontWeight: 500,
       fontSize: 48,
       textAlign: 'center',
