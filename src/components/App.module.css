@@ -1,6 +1,7 @@
 .phonebook {
   max-width: 600px;
   min-width: 320px;
+  min-height: 350px;
   margin: 0 auto;
   padding: 30px;
   border: 2px solid grey;

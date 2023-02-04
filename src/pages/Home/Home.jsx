@@ -3,9 +3,10 @@ const styles = {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      minHeight: 350
     },
     title: {
-      marginTop: 60,
+      // marginTop: 60,
       fontWeight: 500,
       fontSize: 48,
       textAlign: 'center',
