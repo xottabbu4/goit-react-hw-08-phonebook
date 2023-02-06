@@ -6,7 +6,6 @@ const styles = {
       minHeight: 350
     },
     title: {
-      // marginTop: 60,
       fontWeight: 500,
       fontSize: 48,
       textAlign: 'center',

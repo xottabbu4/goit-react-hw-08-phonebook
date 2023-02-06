@@ -13,14 +13,6 @@
   }
   
   .inputField {
-    /* height: 40px;
-    max-width: 400px;
-    background: #ecf0f3;
-    border: 1px solid transparent;
-    outline: none;
-    border-radius: 50px;
-    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
-    text-indent: 20px; */
     display: block;
   width: 250px;
   height: 30px;
@@ -31,19 +23,6 @@
   }
   
   .button {
-    /* height: 40px;
-    width: 150px;
-    font-size: 15px;
-    font-weight: 600;
-    background: #ecf0f3;
-    border: 1px solid transparent;
-    outline: none;
-    border-radius: 50px;
-    color: black;
-    cursor: pointer;
-    box-shadow: 6px 6px 6px #cbced1, -2px -2px 18px white;
-    padding: 0 20px;
-    transition: all 250ms ease-in-out; */
 
     display: block;
   width: 150px;
